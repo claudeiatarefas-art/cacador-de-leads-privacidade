@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Caçador de Leads</title>
+<meta name="description" content="Política de privacidade do aplicativo Caçador de Leads.">
+<style>
+  :root { --bg:#F3F5FA; --card:#FFFFFF; --borda:#D6DEEB; --texto:#0E1A33; --suave:#55627A; --acento:#A3520C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0A1020; --card:#111A2E; --borda:#24324F; --texto:#E6ECF7; --suave:#93A0B8; --acento:#F8B26A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--texto); font:16px/1.65 system-ui, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+  h1 { font-size:28px; line-height:1.2; margin:0; }
+  h2 { font-size:19px; margin:32px 0 8px; }
+  .data { color:var(--suave); margin:0 0 24px; }
+  section { background:var(--card); border:1px solid var(--borda); border-radius:14px; padding:4px 22px 18px; margin-bottom:16px; }
+  a { color:var(--acento); }
+  code { background:var(--bg); padding:1px 6px; border-radius:6px; font-size:14px; }
+  footer { color:var(--suave); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F59E3B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg>
+    <h1>Política de Privacidade — Caçador de Leads</h1>
+  </header>
+  <p class="data">Última atualização: 24 de outubro de 2026</p>
+  <p>O Caçador de Leads é um aplicativo de prospecção comercial para Windows. Esta política explica quais dados ele usa e onde eles ficam.</p>
+
+  <section>
+    <h2>1. Dados da sua conta</h2>
+    <p>Para criar a conta, o aplicativo pede <strong>nome, e-mail, senha</strong> e o <strong>código de convite</strong> recebido.</p>
+    <ul>
+      <li>A conta é gerenciada pelo <strong>Google Firebase</strong> (Authentication e Cloud Firestore), com servidores em <strong>São Paulo</strong>.</li>
+      <li>A senha é processada pelo Firebase e guardada de forma criptografada: <strong>ninguém consegue lê-la</strong>, nem o administrador.</li>
+      <li>O administrador do aplicativo vê seu nome, e-mail, código de convite usado, data de cadastro, último acesso e número de buscas, e pode bloquear o acesso.</li>
+      <li>As regras de segurança do servidor impedem que um usuário leia os dados de outro.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Suas chaves de API</h2>
+    <p>As chaves que você cadastra (Google, Tavily, Meta e, opcionalmente, Anthropic) ficam <strong>somente no seu computador</strong>, criptografadas pela proteção de dados do Windows, e são usadas apenas para fazer as consultas em seu nome, diretamente aos serviços oficiais.</p>
+  </section>
+
+  <section>
+    <h2>3. Dados dos estabelecimentos pesquisados</h2>
+    <p>O aplicativo consulta <strong>informações públicas de estabelecimentos comerciais</strong> por meio de APIs oficiais:</p>
+    <ul>
+      <li><strong>Google Places API:</strong> nome, endereço, telefone, site, nota e avaliações;</li>
+      <li><strong>Tavily Search:</strong> busca do perfil do Instagram;</li>
+      <li><strong>Instagram Graph API (Meta):</strong> dados públicos de contas profissionais.</li>
+    </ul>
+    <p>Ele não faz raspagem (<em>scraping</em>) de sites. Os resultados ficam guardados no seu computador, como cache; o conteúdo do Google expira conforme os termos do serviço.</p>
+  </section>
+
+  <section>
+    <h2>4. Compartilhamento</h2>
+    <p>O aplicativo <strong>não vende nem compartilha</strong> seus dados com terceiros. As únicas comunicações externas são o Firebase (para a sua conta), as consultas às APIs acima (com as suas chaves) e a abertura de links que você clicar (WhatsApp, Instagram, Maps, VS Code).</p>
+  </section>
+
+  <section>
+    <h2>5. Seus direitos (LGPD)</h2>
+    <ul>
+      <li>Alterar seu nome no <strong>Perfil</strong> do aplicativo;</li>
+      <li>pedir a exclusão da sua conta pelo e-mail de contato abaixo;</li>
+      <li>apagar os dados guardados no computador desinstalando o aplicativo, ou apagando a pasta <code>%APPDATA%\CacadorDeLeads</code>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Contato</h2>
+    <p>Dúvidas sobre privacidade: <a href="mailto:claude.ia.tarefas@gmail.com">claude.ia.tarefas@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Luís Felipe Rodrigues Santos — Caçador de Leads</footer>
+</main>
+</body>
+</html>
